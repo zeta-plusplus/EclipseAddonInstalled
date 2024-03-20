@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+
+Name: META-INF/maven/org.eclipse.gef_root/org.eclipse.draw2d/pom.xml
+SHA-256-Digest: ME8ByWV51fmgqwouQGZTLX1iPn4sBDEjNpONOw2dUR4=
+
+Name: META-INF/maven/org.eclipse.gef_root/org.eclipse.draw2d/pom.propert
+ ies
+SHA-256-Digest: /jDBw2bC5/QBeGHa2NvtX1l9JHddFHXTQIPoICUktrQ=
+
+Name: epl-2.0.html
+SHA-256-Digest: koxKavfpz4JYnlYPmP+7at5zhbWf7Iy07zamu5HPcBg=
+
+Name: feature.xml
+SHA-256-Digest: jYIZJdv8uc41d1gW65n1o/GquFg/40GqGvDskcGIOyY=
+
+Name: feature.properties
+SHA-256-Digest: 63I2kAuBuOZMmU37cSWaJTREdOXwB/zp5VcwKkvcRGs=
+
+Name: license.html
+SHA-256-Digest: Dv5NbrV590iFepPFp4HDAA9w8zkHSynRW5FCE+FLHVM=
+

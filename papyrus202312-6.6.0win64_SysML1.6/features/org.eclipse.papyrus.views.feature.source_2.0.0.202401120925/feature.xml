@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.papyrus.views.feature.source" version="2.0.0.202401120925" label="%featureName" provider-name="%providerName">
+  <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <includes id="org.eclipse.papyrus.views.feature" version="2.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.search.feature.source" version="2.1.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.modelexplorer.feature.source" version="4.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.properties.feature.source" version="3.1.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.references.feature.source" version="2.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.documentation.feature.source" version="1.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.validation.feature.source" version="2.0.0.202401120925"/>
+</feature>

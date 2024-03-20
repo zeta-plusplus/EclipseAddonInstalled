@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+repositories/https\:__download.eclipse.org_eclipse_updates_4.30/count=1
+repositories/https\:__download.eclipse.org_eclipse_updates_4.30/enabled=true
+repositories/https\:__download.eclipse.org_eclipse_updates_4.30/isSystem=false
+repositories/https\:__download.eclipse.org_eclipse_updates_4.30/uri=https\://download.eclipse.org/eclipse/updates/4.30
+repositories/https\:__download.eclipse.org_releases_latest/count=1
+repositories/https\:__download.eclipse.org_releases_latest/enabled=true
+repositories/https\:__download.eclipse.org_releases_latest/isSystem=false
+repositories/https\:__download.eclipse.org_releases_latest/uri=https\://download.eclipse.org/releases/latest
+repositories/https\:__download.eclipse.org_tools_orbit_simrel_orbit-aggregation_2023-12/count=1
+repositories/https\:__download.eclipse.org_tools_orbit_simrel_orbit-aggregation_2023-12/enabled=true
+repositories/https\:__download.eclipse.org_tools_orbit_simrel_orbit-aggregation_2023-12/isSystem=false
+repositories/https\:__download.eclipse.org_tools_orbit_simrel_orbit-aggregation_2023-12/uri=https\://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2023-12

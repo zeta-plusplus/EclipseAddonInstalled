@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.uml.feature"
+      label="%featureName"
+      version="5.1.0.202401120925"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.papyrus.uml.internationalization.feature"
+         version="1.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.modelexplorer.feature"
+         version="2.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.properties.feature"
+         version="3.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.tools.feature"
+         version="3.1.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.ui.feature"
+         version="1.2.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.diagram.feature"
+         version="4.1.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.textedit.feature"
+         version="2.0.100.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.alf.feature"
+         version="3.0.100.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.search.feature"
+         version="2.1.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.xtext.integration.feature"
+         version="2.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.m2m.qvto.feature"
+         version="1.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.nattable.feature"
+         version="4.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.diagram.css.feature"
+         version="2.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.decoratormodel.feature"
+         version="3.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.architecture.feature"
+         version="1.0.0.202401120925"/>
+
+   <includes
+         id="org.eclipse.papyrus.uml.expressions.feature"
+         version="1.0.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.commands"
+         download-size="33"
+         install-size="78"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.controlmode.profile"
+         download-size="47"
+         install-size="104"
+         version="3.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.export"
+         download-size="80"
+         install-size="182"
+         version="2.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.extensionpoints"
+         download-size="67"
+         install-size="214"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.icons"
+         download-size="1550"
+         install-size="3838"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.import"
+         download-size="39"
+         install-size="93"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.perspective"
+         download-size="16"
+         install-size="43"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.profile"
+         download-size="219"
+         install-size="437"
+         version="4.2.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.profile.drafter"
+         download-size="169"
+         install-size="366"
+         version="2.2.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.resourceloading.profile"
+         download-size="15"
+         install-size="37"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.service.types"
+         download-size="520"
+         install-size="2145"
+         version="5.2.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.service.types.ui"
+         download-size="100"
+         install-size="304"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.templaterepository"
+         download-size="17"
+         install-size="45"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.documentation.profile"
+         download-size="31"
+         install-size="51"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.appearance"
+         download-size="28"
+         install-size="55"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.oclconstraintevaluation"
+         download-size="18"
+         install-size="31"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.navigation"
+         download-size="49"
+         install-size="110"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.service.validation"
+         download-size="34"
+         install-size="70"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.services.decoration"
+         download-size="17"
+         install-size="33"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.modelrepair"
+         download-size="225"
+         install-size="492"
+         version="3.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.filters"
+         download-size="34"
+         install-size="59"
+         version="2.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.filters.edit"
+         download-size="22"
+         install-size="38"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.uml.types.core"
+         download-size="310"
+         install-size="705"
+         version="5.0.0.202401120925"
+         unpack="false"/>
+
+</feature>

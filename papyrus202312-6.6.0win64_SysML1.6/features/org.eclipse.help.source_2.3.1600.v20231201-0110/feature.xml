@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.help.source" version="2.3.1600.v20231201-0110" label="%featureName" provider-name="%providerName">
+  <description>
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <includes id="org.eclipse.help" version="2.3.1600.v20231201-0110"/>
+  <plugin id="org.eclipse.equinox.http.jetty.source" version="3.9.0.v20231104-1114"/>
+  <plugin id="org.eclipse.equinox.http.registry.source" version="1.3.400.v20231012-1210"/>
+  <plugin id="org.eclipse.equinox.http.servlet.source" version="1.8.0.v20231018-1316"/>
+  <plugin id="org.eclipse.equinox.jsp.jasper.source" version="1.1.800.v20231012-1238"/>
+  <plugin id="org.eclipse.equinox.jsp.jasper.registry.source" version="1.2.200.v20231012-1239"/>
+  <plugin id="org.eclipse.help.base.source" version="4.4.200.v20231201-0110"/>
+  <plugin id="org.eclipse.help.ui.source" version="4.6.100.v20231106-1240"/>
+  <plugin id="org.eclipse.help.webapp.source" version="3.11.200.v20231108-0716"/>
+  <plugin id="org.eclipse.core.net.source" version="1.5.200.v20231106-1240"/>
+  <plugin id="org.eclipse.equinox.security.source" version="1.4.100.v20231012-1825"/>
+</feature>

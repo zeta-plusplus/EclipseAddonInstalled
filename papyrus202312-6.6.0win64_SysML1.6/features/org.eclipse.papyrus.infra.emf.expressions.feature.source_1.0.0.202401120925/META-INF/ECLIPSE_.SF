@@ -1,0 +1,26 @@
+Signature-Version: 1.0
+Created-By: 11.0.21 (Eclipse Adoptium)
+SHA-256-Digest-Manifest: rqvk620FyV0i4qz7VwjZhJvYEaKc/WvlqZ/7qjJ2mW8=
+SHA-256-Digest-Manifest-Main-Attributes: rno6v0Aj7cN+fCL6AZjQqJ/DhhApnvh
+ 3JhJf/KjlzXc=
+
+Name: epl-2.0.html
+SHA-256-Digest: AED4dAeGrOY0hc5nW8gJmyCMPlZ5rTF8ACL9TK1dx/Q=
+
+Name: META-INF/maven/org.eclipse.papyrus/org.eclipse.papyrus.infra.emf.e
+ xpressions.feature/pom.xml
+SHA-256-Digest: zZu2aYWsL1AZjGlyk/wTlt5NOPc0dZvkDG7vfoJ6aSU=
+
+Name: META-INF/maven/org.eclipse.papyrus/org.eclipse.papyrus.infra.emf.e
+ xpressions.feature/pom.properties
+SHA-256-Digest: +qnnQD0v4+5x1RG/giMwKcIH8rva92Do/ERG+RL+5Ss=
+
+Name: feature.xml
+SHA-256-Digest: 0C5sVXCj+wCCwrMTtd95o8/7I4PLszenwPGplvcm2jo=
+
+Name: feature.properties
+SHA-256-Digest: 5YPzJFdH56O3vUpZZWOaL8WbwuhY6r8ryqABcnBasYY=
+
+Name: license.html
+SHA-256-Digest: zVM/vJgU0kRLZDQ3qmgeRgMh5WQ38NzJh/8vJedLd0s=
+

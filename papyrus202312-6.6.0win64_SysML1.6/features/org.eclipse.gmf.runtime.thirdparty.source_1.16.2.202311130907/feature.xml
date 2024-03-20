@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.gmf.runtime.thirdparty.source"
+      label="%featureName"
+      version="1.16.2.202311130907"
+      provider-name="%providerName"
+      image="modeling32.png">
+
+   <description url="http://www.eclipse.org/gmf">
+      %description
+   </description>
+
+   <copyright url="http://www.eclipse.org/legal/epl-2.0/">
+Copyright (c) 2002, 2015 IBM Corporation and others.
+This program and the accompanying materials are made
+available under the terms of the Eclipse Public License 2.0
+which is available at https://www.eclipse.org/legal/epl-2.0/
+
+SPDX-License-Identifier: EPL-2.0
+   </copyright>
+
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="https://download.eclipse.org/modeling/gmp/gmf-runtime/updates/releases/"/>
+   </url>
+
+   <plugin id="org.apache.batik.anim.source"               download-size="398" install-size="1374" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.awt.util.source"           download-size="417" install-size="1482" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.bridge.source"             download-size="516" install-size="1999" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.codec.source"              download-size="108" install-size="393" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.constants.source"          download-size="11" install-size="16" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.css.source"                download-size="309" install-size="1114" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.dom.source"                download-size="171" install-size="623" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.dom.svg.source"            download-size="236" install-size="1199" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.ext.source"                download-size="19" install-size="36" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.gvt.source"                download-size="215" install-size="739" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.i18n.source"               download-size="17" install-size="30" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.parser.source"             download-size="92" install-size="328" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.script.source"             download-size="37" install-size="79" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.shared.resources.source"   download-size="14" install-size="24" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.svggen.source"             download-size="260" install-size="702" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.transcoder.source"         download-size="121" install-size="467" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.util.source"               download-size="121" install-size="368" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.batik.xml.source"                download-size="28" install-size="137" version="1.17.0.v20231009-1000" unpack="false"/>
+   <plugin id="org.apache.xmlgraphics.source"              download-size="661" install-size="2126" version="2.9.0.v20230916-1600" unpack="false"/>
+</feature>

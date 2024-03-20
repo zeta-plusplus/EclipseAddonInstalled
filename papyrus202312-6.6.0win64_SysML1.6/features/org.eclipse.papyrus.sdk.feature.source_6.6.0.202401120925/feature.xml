@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.papyrus.sdk.feature.source" version="6.6.0.202401120925" plugin="org.eclipse.papyrus.sdk" label="%featureName" provider-name="%providerName">
+  <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <includes id="org.eclipse.papyrus.sdk.feature" version="6.6.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.infra.feature.source" version="3.3.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.editor.feature.source" version="2.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.emf.feature.source" version="1.1.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.emf.facet.feature.source" version="3.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.uml.feature.source" version="5.1.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.views.feature.source" version="2.0.0.202401120925"/>
+  <includes id="org.eclipse.papyrus.doc.feature.source" version="3.1.0.202401120925"/>
+  <plugin id="org.apache.logging.log4j.source" version="2.17.1.v20220106-2156" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.sdk.source" version="6.6.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+</feature>

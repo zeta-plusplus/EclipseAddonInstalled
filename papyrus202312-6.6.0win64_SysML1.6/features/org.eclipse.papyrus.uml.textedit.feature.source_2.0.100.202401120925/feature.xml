@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.papyrus.uml.textedit.feature.source" version="2.0.100.202401120925" label="%featureName" provider-name="%providerName">
+  <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <includes id="org.eclipse.papyrus.uml.textedit.feature" version="2.0.100.202401120925"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.collaborationuse.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.collaborationuse.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.common.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.common.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.connectionpointreference.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.connectionpointreference.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.message.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.message.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.parameter.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.parameter.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.property.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.property.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.state.xtext.source" version="3.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.state.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.transition.xtext.source" version="2.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.transition.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.constraintwithessentialocl.xtext.source" version="2.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.javaconstraint.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.port.xtext.source" version="2.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.port.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.valuespecification.xtext.source" version="2.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.valuespecification.xtext.ui.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.valuespecification.xtext.utils.source" version="2.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.source" version="4.0.100.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.ui.source" version="4.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+</feature>

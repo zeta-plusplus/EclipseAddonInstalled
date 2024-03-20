@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.infra.core.feature"
+      label="%featureName"
+      version="3.1.100.202401120925"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %dsecription
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core"
+         download-size="322"
+         install-size="705"
+         version="4.4.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core.architecture"
+         download-size="112"
+         install-size="412"
+         version="3.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core.architecture.edit"
+         download-size="64"
+         install-size="134"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core.log"
+         download-size="15"
+         install-size="20"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core.sasheditor"
+         download-size="236"
+         install-size="496"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core.sasheditor.di"
+         download-size="67"
+         install-size="140"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.core.sashwindows.di"
+         download-size="117"
+         install-size="458"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.tools"
+         download-size="137"
+         install-size="282"
+         version="4.2.0.202401120925"
+         unpack="false"/>
+
+</feature>

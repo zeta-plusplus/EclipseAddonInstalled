@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.1
+Build-Jdk-Spec: 17
+
+Name: epl-2.0.html
+SHA-256-Digest: koxKavfpz4JYnlYPmP+7at5zhbWf7Iy07zamu5HPcBg=
+
+Name: META-INF/maven/org.eclipse.papyrus/org.eclipse.papyrus.uml.feature
+ /pom.xml
+SHA-256-Digest: SxfBVrIZiJgDNUVMSfZII461EjSe9k17nbALmHZKQcY=
+
+Name: feature.xml
+SHA-256-Digest: /5e+oYcqfzq4dBoCPJHSmLxMkR5NRgkzEZn0loWskKo=
+
+Name: META-INF/maven/org.eclipse.papyrus/org.eclipse.papyrus.uml.feature
+ /pom.properties
+SHA-256-Digest: nZg/7Gt4y9ARJJCiRxwhhFLm+aHoRTru0gHz83mxUnM=
+
+Name: feature.properties
+SHA-256-Digest: mdARMNqmY8ADN6m0/9bjqRGILeGszGtyvc1ohk3R3us=
+
+Name: license.html
+SHA-256-Digest: Dv5NbrV590iFepPFp4HDAA9w8zkHSynRW5FCE+FLHVM=
+

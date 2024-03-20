@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.papyrus.infra.services.feature.source" version="3.1.0.202401120925" label="%featureName" provider-name="%providerName">
+  <description url="https://eclipse.org/papyrus/">
+   	  %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <includes id="org.eclipse.papyrus.infra.services.feature" version="3.1.0.202401120925"/>
+  <plugin id="org.eclipse.papyrus.infra.services.architecture.source" version="2.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.controlmode.source" version="3.1.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.controlmode.history.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.decoration.source" version="3.1.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.edit.source" version="4.1.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.markerlistener.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.resourceloading.source" version="4.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.validation.source" version="4.1.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.labelprovider.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.semantic.source" version="3.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.viewersearch.source" version="4.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.viewlabelprovider.source" version="2.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.openelement.source" version="4.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.navigation.source" version="4.0.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.papyrus.infra.services.localizer.source" version="3.1.0.202401120925" download-size="0" install-size="0" unpack="false"/>
+</feature>

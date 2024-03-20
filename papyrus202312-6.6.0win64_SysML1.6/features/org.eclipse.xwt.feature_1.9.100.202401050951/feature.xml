@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.xwt.feature"
+      label="%featureName"
+      version="1.9.100.202401050951"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="XWT Update Site" url="http://www.eclipse.org/downloads/download.php?format=xml&amp;file=/xwt/updates"/>
+   </url>
+
+   <plugin
+         id="org.eclipse.xwt"
+         download-size="597"
+         install-size="1189"
+         version="1.8.0.202401050951"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xwt.pde"
+         download-size="36"
+         install-size="93"
+         version="1.7.0.202401050951"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xwt.xml"
+         download-size="17"
+         install-size="31"
+         version="1.7.0.202401050951"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xwt.forms"
+         download-size="32"
+         install-size="73"
+         version="1.7.0.202401050951"
+         unpack="false"/>
+
+   <plugin
+         id="org.pushingpixels.trident"
+         download-size="122"
+         install-size="228"
+         version="1.3.0.v20231219-1530"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xwt.emf"
+         download-size="27"
+         install-size="54"
+         version="1.7.0.202401050951"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.xwt.css"
+         download-size="18"
+         install-size="34"
+         version="1.7.0.202401050951"
+         unpack="false"/>
+
+</feature>

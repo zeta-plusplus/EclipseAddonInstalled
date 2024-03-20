@@ -1,0 +1,26 @@
+Signature-Version: 1.0
+Created-By: 11.0.18 (Eclipse Adoptium)
+SHA-256-Digest-Manifest: GyYZDwImVfywUHOa1oti6tfWkq5iWylF7Iwa2y1QQA4=
+SHA-256-Digest-Manifest-Main-Attributes: rno6v0Aj7cN+fCL6AZjQqJ/DhhApnvh
+ 3JhJf/KjlzXc=
+
+Name: META-INF/maven/org.eclipse.emf.features/org.eclipse.emf.ecore.edit
+ or/pom.xml
+SHA-256-Digest: hlc+lPgsnztUgp1HVmbAde0cp+1psv6l6laRS9ZkwrU=
+
+Name: epl-2.0.html
+SHA-256-Digest: AED4dAeGrOY0hc5nW8gJmyCMPlZ5rTF8ACL9TK1dx/Q=
+
+Name: META-INF/maven/org.eclipse.emf.features/org.eclipse.emf.ecore.edit
+ or/pom.properties
+SHA-256-Digest: P8SFL1vbvVSk6EdikdJrsO7DzYMz1QIgOj51+ljZboA=
+
+Name: feature.xml
+SHA-256-Digest: Rk9e3O5JwSDkTJCq2MWk3MjSjgqC5AiIm7E/Ax9YlJo=
+
+Name: feature.properties
+SHA-256-Digest: g7xch64E06E1fl1Ag0TrMRqVMCZbNSa/GVIdbnbKII4=
+
+Name: license.html
+SHA-256-Digest: zVM/vJgU0kRLZDQ3qmgeRgMh5WQ38NzJh/8vJedLd0s=
+

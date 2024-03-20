@@ -1,0 +1,685 @@
+!SESSION 2024-03-20 05:40:08.743 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.mylyn.bugzilla.ui 4 0 2024-03-20 05:41:31.609
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.bugzilla.ui [411]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [444]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [416]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.commons.notifications.feed 4 0 2024-03-20 05:41:31.627
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.notifications.feed [416]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.context.tasks.ui 4 0 2024-03-20 05:41:31.627
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.context.tasks.ui [425]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="3.8.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [444]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [416]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.java.tasks 4 0 2024-03-20 05:41:31.667
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.tasks [433]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [444]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [416]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.bugs 4 0 2024-03-20 05:41:31.710
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.bugs [439]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [444]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [416]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.tasks.ui 4 0 2024-03-20 05:41:31.756
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.tasks.ui [444]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+       org.eclipse.mylyn.commons.notifications.feed [416]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.mylyn.team.ui 4 0 2024-03-20 05:41:31.809
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.team.ui [445]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.tasks.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.tasks.ui; bundle-version="3.25.2.v20200814-0512"; singleton:="true"
+       org.eclipse.mylyn.tasks.ui [444]
+         Unresolved requirement: Require-Bundle: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.0.0"
+           -> Bundle-SymbolicName: org.eclipse.mylyn.commons.notifications.feed; bundle-version="1.17.2.v20200813-0821"; singleton:="true"
+              org.eclipse.mylyn.commons.notifications.feed [416]
+                No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"] because it is exposed to package 'javax.xml.bind' from resources javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"] and jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle: javax.xml.bind
+  javax.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.2.0.v201105210648"; osgi.identity="javax.xml.bind"]
+
+Chain 2:
+  org.eclipse.mylyn.commons.notifications.feed [osgi.identity; type="osgi.bundle"; version:Version="1.17.2.v20200813-0821"; osgi.identity="org.eclipse.mylyn.commons.notifications.feed"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=com.sun.xml.bind)(bundle-version>=2.2.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="2.3.3.v20221203-1659"; osgi.wiring.bundle="com.sun.xml.bind"
+  com.sun.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="com.sun.xml.bind"]
+    import: (&(osgi.wiring.package=javax.xml.bind)(&(version>=2.3.3)(!(version>=2.3.4))))
+     |
+    export: osgi.wiring.package: javax.xml.bind
+  jakarta.xml.bind [osgi.identity; type="osgi.bundle"; version:Version="2.3.3.v20221203-1659"; osgi.identity="jakarta.xml.bind"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.emf.ecoretools.design.ui 4 0 2024-03-20 05:41:31.934
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.ecoretools.design.ui [1031]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1066]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.sequence 4 0 2024-03-20 05:41:32.023
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.sequence [1062]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1066]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui.ext [1067]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.sequence.edit 4 0 2024-03-20 05:41:32.076
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.sequence.edit [1063]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1066]
+         No resolution report for the bundle.  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui.ext [1067]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.sequence; bundle-version="7.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.sequence; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.sequence [1062]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.0"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.7.202301170754"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.sequence.ui 4 0 2024-03-20 05:41:32.162
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.sequence.ui [1065]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.sequence.edit; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.sequence.edit; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.sequence.edit [1063]
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+              org.eclipse.sirius.diagram.ui [1066]
+                No resolution report for the bundle.         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.7.202301170754"; singleton:="true"
+              org.eclipse.sirius.diagram.ui.ext [1067]
+                Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.sequence; bundle-version="7.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.sirius.diagram.sequence; bundle-version="7.0.7.202301170754"; singleton:="true"
+              org.eclipse.sirius.diagram.sequence [1062]
+                Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.7.202301170754"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui.ext; bundle-version="7.0.7.202301170754"; singleton:="true"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.ui 4 0 2024-03-20 05:41:32.202
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.ui [1066]
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.diagram.ui.ext 4 0 2024-03-20 05:41:32.244
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.diagram.ui.ext [1067]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1066]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.editor.diagram 4 0 2024-03-20 05:41:32.309
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.editor.diagram [1071]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="7.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1066]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.sirius.eef.adapters 4 0 2024-03-20 05:41:32.344
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.sirius.eef.adapters [1075]
+  Unresolved requirement: Require-Bundle: org.eclipse.sirius.diagram.ui; bundle-version="2.0.0"
+    -> Bundle-SymbolicName: org.eclipse.sirius.diagram.ui; bundle-version="7.0.7.202301170754"; singleton:="true"
+       org.eclipse.sirius.diagram.ui [1066]
+         No resolution report for the bundle.  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"] because it is exposed to package 'org.w3c.dom.svg' from resources org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"] and org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.w3c.dom.svg)(bundle-version>=1.1.0))
+     |
+    provide: osgi.wiring.bundle: org.w3c.dom.svg
+  org.w3c.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.1.0.v201011041433"; osgi.identity="org.w3c.dom.svg"]
+
+Chain 2:
+  org.eclipse.sirius.diagram.ui [osgi.identity; type="osgi.bundle"; version:Version="7.0.7.202301170754"; osgi.identity="org.eclipse.sirius.diagram.ui"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.gmf.runtime.draw2d.ui.render.awt)(bundle-version>=1.10.0))
+     |
+    provide: osgi.wiring.bundle; bundle-version:Version="1.11.1.202311130907"; osgi.wiring.bundle="org.eclipse.gmf.runtime.draw2d.ui.render.awt"; singleton:="true"
+  org.apache.batik.transcoder [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.transcoder"]
+    import: (&(osgi.wiring.package=org.apache.batik.anim.dom)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.anim.dom; uses:=org.apache.batik.dom.svg
+  org.apache.batik.anim [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.anim"]
+    import: (&(osgi.wiring.package=org.apache.batik.dom.svg)(&(version>=1.17.0)(!(version>=2.0.0))))
+     |
+    export: osgi.wiring.package=org.apache.batik.dom.svg; uses:=org.w3c.dom.svg
+  org.apache.batik.dom.svg [osgi.identity; type="osgi.bundle"; version:Version="1.17.0.v20231009-1000"; osgi.identity="org.apache.batik.dom.svg"]
+    import: (&(osgi.wiring.package=org.w3c.dom.svg)(version>=1.1.0))
+     |
+    export: osgi.wiring.package: org.w3c.dom.svg
+  org.eclipse.orbit.xml-apis-ext [osgi.identity; type="osgi.bundle"; version:Version="1.0.0.v20230923-0644"; osgi.identity="org.eclipse.orbit.xml-apis-ext"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)

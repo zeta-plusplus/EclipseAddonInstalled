@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.infra.gmfdiag.css.feature"
+      version="3.0.0.202401120925"
+      label="%featureName"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css"
+         download-size="286"
+         install-size="626"
+         version="3.0.100.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css.configuration"
+         download-size="67"
+         install-size="160"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css.properties"
+         download-size="136"
+         install-size="297"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css3.xtext"
+         download-size="339"
+         install-size="888"
+         version="4.0.100.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css3.xtext.ui"
+         download-size="169"
+         install-size="650"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css.theme"
+         download-size="13"
+         install-size="19"
+         version="2.0.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css.model"
+         download-size="50"
+         install-size="118"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.css.model.edit"
+         download-size="32"
+         install-size="59"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+</feature>

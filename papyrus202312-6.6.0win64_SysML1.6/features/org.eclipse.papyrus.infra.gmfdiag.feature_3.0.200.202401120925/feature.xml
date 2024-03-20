@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.infra.gmfdiag.feature"
+      label="%featureName"
+      version="3.0.200.202401120925"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.apache.log4j"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.commands"
+         download-size="61"
+         install-size="137"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.navigation"
+         download-size="87"
+         install-size="186"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.outline"
+         download-size="34"
+         install-size="75"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.preferences"
+         download-size="118"
+         install-size="239"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.properties"
+         download-size="211"
+         install-size="588"
+         version="5.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.widgets"
+         download-size="31"
+         install-size="66"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.common"
+         download-size="1013"
+         install-size="2222"
+         version="4.3.200.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.expansion"
+         download-size="120"
+         install-size="432"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.gef"
+         download-size="17"
+         install-size="33"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.modelexplorer"
+         download-size="46"
+         install-size="107"
+         version="2.0.100.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.extensionpoints.editors"
+         download-size="36"
+         install-size="64"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.dnd"
+         download-size="69"
+         install-size="158"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.hyperlink"
+         download-size="107"
+         install-size="246"
+         version="4.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.viewersearcher"
+         download-size="17"
+         install-size="43"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.controlmode"
+         download-size="20"
+         install-size="50"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.gmfmenu.filter"
+         download-size="16"
+         install-size="61"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.menu"
+         download-size="47"
+         install-size="120"
+         version="2.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.export"
+         download-size="58"
+         install-size="131"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.assistant"
+         download-size="137"
+         install-size="407"
+         version="2.1.100.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.assistant.edit"
+         download-size="66"
+         install-size="140"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.assistant.editor"
+         download-size="77"
+         install-size="166"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.assistant.ui"
+         download-size="18"
+         install-size="45"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.canonical"
+         download-size="76"
+         install-size="184"
+         version="3.1.100.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.welcome"
+         download-size="42"
+         install-size="93"
+         version="2.1.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime"
+         download-size="304"
+         install-size="623"
+         version="4.1.100.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.representation"
+         download-size="58"
+         install-size="148"
+         version="3.0.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.representation.edit"
+         download-size="54"
+         install-size="109"
+         version="3.0.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.style"
+         download-size="28"
+         install-size="44"
+         version="3.0.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.style.edit"
+         download-size="19"
+         install-size="29"
+         version="3.0.0.202401120925"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.paletteconfiguration"
+         download-size="100"
+         install-size="287"
+         version="5.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.paletteconfiguration.edit"
+         download-size="74"
+         install-size="169"
+         version="5.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.gmfdiag.extensionpoints.editors"
+         download-size="80"
+         install-size="168"
+         version="2.0.0.202401120925"
+         unpack="false"/>
+
+</feature>

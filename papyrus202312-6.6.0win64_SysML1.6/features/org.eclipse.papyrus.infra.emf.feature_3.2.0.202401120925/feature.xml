@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.papyrus.infra.emf.feature"
+      label="%featureName"
+      version="3.2.0.202401120925"
+      provider-name="%providerName">
+
+   <description url="https://eclipse.org/papyrus/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf"
+         download-size="267"
+         install-size="599"
+         version="4.4.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf.diagram.common"
+         download-size="18"
+         install-size="35"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf.appearance"
+         download-size="25"
+         install-size="45"
+         version="3.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf.readonly"
+         download-size="59"
+         install-size="138"
+         version="4.1.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf.types"
+         download-size="275"
+         install-size="578"
+         version="5.0.100.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf.types.ui"
+         download-size="57"
+         install-size="122"
+         version="5.0.0.202401120925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.papyrus.infra.emf.gmf"
+         download-size="72"
+         install-size="149"
+         version="2.1.0.202401120925"
+         unpack="false"/>
+
+</feature>
